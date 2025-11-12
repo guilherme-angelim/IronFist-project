@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: url('../assets/iron-fist_background.png') no-repeat center center fixed;
+}
+
+header{
+    background:rgb(23, 43, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    height:190px;
+    z-index: 2;
+}
+
+#icon{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+#icon img{
+    width: 300px;
+}
+
+.options{
+ background: rgb(43, 148, 55);
+  border-radius: 50px;      
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.header-font{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    list-style:none;
+}
+
+.header-font a{
+    color:rgb(241, 225, 0);
+    text-decoration:none;
+}
+
+section{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gif{
+    height: 60%;
+    width: 900%;
+    z-index:10;
+}
+
+.titulo {
+  position: absolute;
+  display:block;
+  margin: 0 auto;              /* centraliza horizontalmente */
+  margin-top: -230px;           /* sobe um pouco (ajuste o valor como quiser) */
+  width: 600px; 
+  z-index: 9999;
+  left: 50%;              
+  transform: translateX(-50%); 
+}
+
+.personagem {
+    margin-top: 300px;
+    margin-left:1300px;
+    border: 4px solid rgb(241, 225, 0); /* cor da borda */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);     /* fundo leve atrás da imagem */
+}
+
+.faq-conteiner{
+    width: 800px;
+    margin:30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-pergunta{
+    cursor: pointer;
+    background: #cdf323;
+    color: #fff;
+    padding: 15px 40px 15px;
+    position: relative;
+    font-weight: 700;
+    /* display: block;
+    tira a setinha  */
+}
+
+/* remove o marcador inicial e permite com que a gente coloque o nosso próprio marcador, pseudo elemento */
+.faq-pergunta::marker{
+    content: "";
+}
+
+/* adiciona o ícone de + inicial */
+.faq-pergunta::before{
+    content: "+";
+    position: absolute;
+    inset-inline-end: 15px;
+    /* joga o elemento lá pro final do retangulo azul */
+    transition: transform 0.3s ease;
+    /* adiciona transição suave */
+    font-size:1.2rem;
+}
+
+/* muda o icone para - quando estiver aberto */
+.faq-item[open] .faq-pergunta::before {
+    content: "-";
+    /* realiza efeito de rotação ao abrir ou fechar */
+    transform: rotate(180deg);
+}
+
+.faq-resposta{
+    padding: 15px;
+    background: #ccc;
+    border-top: 2px solid #eee;
+    color: black;
+}
+
