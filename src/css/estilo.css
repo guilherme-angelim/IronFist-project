@@ -81,7 +81,11 @@ section{
   z-index: 9999;
   left: 50%;              
   transform: translateX(-50%); 
+  cursor: pointer;
+  transition: transform 0.5s ease;
+  animation: pulsarChi 3s infinite ease-in-out;
 }
+
 
 .personagem {
     margin-top: 300px;
@@ -292,3 +296,22 @@ footer{
     background-color: rgb(27, 27, 27);
     padding:30px;
 }
+
+@keyframes pulsarChi {
+  0% {
+    transform: translateX(-50%) scale(1);
+    filter: drop-shadow(0 0 5px rgba(29, 153, 17, 0.5));
+  }
+  50% {
+    transform: translateX(-50%) scale(1.05);
+    filter: drop-shadow(0 0 20px rgba(29, 153, 17, 0.8));
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    filter: drop-shadow(0 0 5px rgba(29, 153, 17, 0.5));
+  }
+}
+
+
+
+
