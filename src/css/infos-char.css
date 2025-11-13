@@ -7,6 +7,7 @@
     border: 4px solid #1d9911; /* cor da borda */
     padding: 10px;
     background: rgba(0, 0, 0, 0.6);     /* fundo leve atrás da imagem */
+    position:absolute;
 }
 
 .titulo-menor{
@@ -25,6 +26,7 @@
     border: 1px solid gray;
     border-radius: 8px;
     overflow: hidden;
+    position: relative;
 }
 
 .faq-pergunta1{
