@@ -91,6 +91,21 @@ section{
     padding: 10px;
     background: rgba(0, 0, 0, 0.6);     /* fundo leve atrás da imagem */
 }
+
+
+
+.frase{
+    color:white;
+    font-size: 20px;
+    margin-left:1320px;
+    width:500px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    border: 4px solid #1d9911;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6)
+}
 .conteiner{
     color:white;
     text-align: center;
@@ -173,7 +188,7 @@ section{
     font-size: 100px;
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 2px rgb(27, 165, 0);
-    margin-top: -600px;
+    margin-top: -750px;
     margin-left: 400px;
     text-shadow: 10px 10px 10px black;
     
@@ -266,4 +281,14 @@ section{
     border-radius: 10px;
     padding: 10px;
     background: rgba(0, 0, 0, 0.6);     /* fundo leve atrás da imagem */
+}
+
+h5{
+    color:white;
+    font-size: 25px;
+    text-align: center;
+}
+footer{
+    background-color: rgb(27, 27, 27);
+    padding:30px;
 }
