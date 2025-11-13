@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 body{
 background: url('../assets/iron-fist_background.png') no-repeat center center fixed;
 }
@@ -188,7 +190,7 @@ section{
     border-right: 4px solid #1d9911;
 }
 
-.histo{
+#histo{
     font-size: 100px;
     color: rgb(0, 0, 0);
     -webkit-text-stroke: 2px rgb(27, 165, 0);
